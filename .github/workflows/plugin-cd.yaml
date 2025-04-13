@@ -68,7 +68,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Environment
-        uses: halo-sigs/reusable-workflows/plugin-setup-env@v3
+        uses: halo-kunkunyu/reusable-workflows/plugin-setup-env@v1
         with:
           cache-dept-path: ${{ inputs.ui-path }}/pnpm-lock.yaml
           skip-node-setup: ${{ inputs.skip-node-setup }}
@@ -118,7 +118,7 @@ jobs:
           name: artifacts
           path: ${{ inputs.artifacts-path }}
       - name: Release to App Store
-        uses: halo-kunkunyu/app-store-release-action@v3
+        uses: halo-kunkunyu/app-store-release-action@v1
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           app-id: ${{ inputs.app-id }}

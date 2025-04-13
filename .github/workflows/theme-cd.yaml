@@ -87,7 +87,7 @@ jobs:
           name: theme-package
           path: dist
       - name: Release to App Store
-        uses: halo-kunkunyu/app-store-release-action@v3
+        uses: halo-kunkunyu/app-store-release-action@v1
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           app-id: ${{ inputs.app-id }}

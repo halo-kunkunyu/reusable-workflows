@@ -24,7 +24,7 @@ on:
 jobs:
   ci:
     # Suggest using stable branch, tag or sha.
-    uses: halo-kunkunyu/reusable-workflows/.github/workflows/plugin-ci.yaml@v3
+    uses: halo-kunkunyu/reusable-workflows/.github/workflows/plugin-ci.yaml@v1
 ```
 
 inputs:
@@ -59,7 +59,7 @@ on:
 jobs:
   cd:
     # Suggest using stable branch, tag or sha.
-    uses: halo-kunkunyu/reusable-workflows/.github/workflows/plugin-cd.yaml@v3
+    uses: halo-kunkunyu/reusable-workflows/.github/workflows/plugin-cd.yaml@v1
     secrets:
       yunext-pat: ${{ secrets.YUNEXT_PAT }}
     permissions:
@@ -107,7 +107,7 @@ on:
 jobs:
   cd:
     # Suggest using stable branch, tag or sha.
-    uses: halo-kunkunyu/reusable-workflows/.github/workflows/theme-cd.yaml@v3
+    uses: halo-kunkunyu/reusable-workflows/.github/workflows/theme-cd.yaml@v1
     secrets:
       yunext-pat: ${{ secrets.YUNEXT_PAT }}
     permissions:
